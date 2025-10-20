@@ -7,7 +7,7 @@ package immobilien.immobilienverwaltung.facade;
 
 /**
  *
- * @author ahmet
+ * @author ahmet test
  */
 public record BenutzerTO(String benutzerKennung, String vorname, String rolle){
 }
