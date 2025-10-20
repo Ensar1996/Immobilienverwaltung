@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>Reparaturauftragsverwaltung</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <h:outputStylesheet library="css" name="style.css" />
+</h:head>
+
+<h:body>
+
+    <!-- Zurück-Button -->
+    <h:form id="backForm" prependId="false">
+        <h:commandButton value="Zurück" action="homepage.xhtml?faces-redirect=true" />
+    </h:form>
+
+    <div class="dialog-box">
+        <h1>Reparaturaufträge</h1>
+        <h2>Wählen Sie eine Aktion aus</h2>
+
+        <h:form>
+            <div class="action-button">
+                <h:commandButton value="Reparaturauftrag anlegen" 
+                                 action="reparaturauftraganlegen.xhtml?faces-redirect=true" />
+            </div>
+
+            <div class="action-button">
+                <h:commandButton value="Reparaturauftrag verwalten" 
+                                 action="#{reparaturauftragAnzeigenBean.auftraegeSuchen()}"/>
+            </div>
+        </h:form>
+    </div>
+
+</h:body>
+</html>

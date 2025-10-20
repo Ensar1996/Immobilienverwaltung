@@ -1,0 +1,163 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 19.06.2025, 16:21:16
+    Author     : Ensar
+*/
+
+:root {
+    --font-family: 'Arial', sans-serif;
+    --bg-color: #f0f2f5;
+    --container-bg: #ffffff;
+    --primary-color: #3498db;
+    --primary-hover: #2980b9;
+    --text-color: #333;
+    --border-radius: 10px;
+    --box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    
+    
+    height: 100%;
+    font-family: var(--font-family);
+    background: 
+         linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+           url("#{resource['images/immo.png']}") no-repeat center bottom fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.dialog-box {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 50px 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.action-button {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.action-button button,
+.action-button input[type="submit"],
+.dialog-box button,
+.dialog-box input[type="submit"] {
+    background-color: white;
+    color: var(--text-color);
+    border: 1px solid #666;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--font-family);
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all 0.2s ease;
+    width: 100%;
+    max-width: 400px;
+}
+
+.action-button button:hover,
+.action-button input[type="submit"]:hover,
+.dialog-box button:hover,
+.dialog-box input[type="submit"]:hover {
+    background-color: #f0f0f0;
+    border-color: #333;
+}
+
+#backForm {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#backForm input[type="submit"] {
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color var(--transition-speed);
+}
+
+#backForm input[type="submit"]:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Erfolgsmeldung (z. B. FacesMessages) */
+.feedback-messages,
+.custom-message-box {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    text-align: center;
+    animation: fadeOut 5s ease-in-out forwards;
+}
+
+.feedback-messages ul,
+.feedback-messages li,
+.custom-message-box ul,
+.custom-message-box li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+@media (max-width: 600px) {
+    .dialog-box {
+        padding: 30px 20px;
+    }
+
+    .action-button button,
+    .action-button input[type="submit"] {
+        font-size: 16px;
+        padding: 12px 16px;
+    }
+}
