@@ -10,6 +10,7 @@ import java.io.Serializable;
 /**
  *
  * @author ahmet
+ * test
  */
 public class MitarbeiterVermietung extends Benutzer implements Serializable {
     private static final long serialVersionUID = 2L;
