@@ -17,6 +17,8 @@ import java.util.Date;
 /**
  *
  * @author Ensar
+ * 
+ * 
  */
 
 public class Reparaturauftrag implements Serializable {
