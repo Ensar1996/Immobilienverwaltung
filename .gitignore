@@ -1,0 +1,20 @@
+# Maven build output
+target/
+**/target/
+
+# NetBeans
+nb-configuration.xml
+**/nb-configuration.xml
+*.NavData
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
