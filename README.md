@@ -50,7 +50,18 @@ Das Repository enthält zwei Anwendungen:
 
 ##  Screenshots
 
-Screenshots der Anwendung werden hier ergänzt.
+### Mieterübersicht
+
+![Mieterübersicht](docs/screenshots/mieteruebersicht..png)
+
+### Immobilienliste
+
+![Immobilienliste](docs/screenshots/immobilienliste.png)
+
+### Mietvertragsübersicht
+
+![Mietvertragsübersicht](docs/screenshots/mietvertragsuebersicht.png)
+
 
 ##  Hintergrund
 
